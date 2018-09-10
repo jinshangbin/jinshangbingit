@@ -1,0 +1,19 @@
+<div class="row public_page" >
+	<div class="col-md-12" style="margin-top:20px;">
+		<div class="pull-right">
+			<ul class="pagination">
+				<li><a href="javascript:;" num="{prePage}"  >上一页</a></li>
+				<list item="numarray" var="it">
+					
+					<if test="{pageNo}=={it}">
+					<li class="active"><a href="javascript:;" num="{it}">{it}</a></li>
+					</if>
+					<if test="{pageNo}!={it}">
+					<li><a href="javascript:;" num="{it}">{it}</a></li>
+					</if>
+				</list>
+				<li><a href="javascript:;" num="{nextPage}" >下一页</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

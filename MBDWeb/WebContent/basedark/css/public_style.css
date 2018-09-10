@@ -1,0 +1,113 @@
+/*xkl_add start*/
+body,button.btn,h1, h2, h3, h4, h5, h6,.sweet-alert{font-family: "Microsoft YaHei",\5FAE\8F6F\96C5\9ED1}
+label{font-weight: normal;}
+.info{background:#e5f7ff;}
+/*框架头部样式*/
+.layout_settting{font-size: 20px;}
+.menu_topH{line-height: 50px;font-size: 18px;color: #616161;}
+#sidebar-menu li a{border-left:4px solid #2f353f;}
+#sidebar-menu ul ul li.active a,#sidebar-menu li a:hover{border-left:4px solid #2b5e93;}
+.newred_btn{background:#d30e0e !important;color: #fff;border:1px solid #d30e0e !important;}
+
+/*select 样式兼容性 start*/
+select,select.input-sm,select.input-sm:focus{  -moz-appearance:none;  -webkit-appearance:none;line-height:16px; padding-right: 14px;background: url("../images/icon/arrow.png") no-repeat scroll 90% center transparent;  }
+select::-ms-expand { display: none; }
+/*select 样式兼容性 end*/
+
+/*内容主标题样式*/
+h4.page-title{font-size: 16px;color: #616161;margin-top:-8px;margin-bottom: 8px;}
+
+/*按钮 start*/
+.my_tableBtn .btn-default{color:#8f9199;margin-right:12px;margin-bottom: 10px;font-size: 12px;}
+.my_tableBtn .btn-default:hover,.my_tableBtn .btn-default:focus{background:#64cdcb !important;color: #fff;border:1px solid #64cdcb !important;}
+.my_tableBtn .btn-default.redHover_btn:hover,.my_tableBtn .btn-default.redHover_btn:focus{background:#d30e0e !important;color: #fff;border:1px solid #d30e0e !important;}/*删除按钮*/
+.my_panel .btn-info{width: 110%;max-width: 135px;}/*搜索按钮*/
+.zx_defalut_list button{width: 115px;height: 36px;}
+ .modal-footer .btn{height: 35px;}
+/*按钮 end*/
+
+/*下拉框 start*/
+.select2-container--default .select2-selection--single{border:1px solid #ddd;background: #fafafa;min-height: 34px;border-radius: 2px;}
+.select2-container--default.select2-container--focus .select2-selection--multiple,.select2-container--default .select2-selection--multiple{border:1px solid #ddd;background: #fafafa;min-height: 34px;border-radius: 2px;}
+.select2-dropdown,.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #eee;box-shadow: 0 1px 1px #ccc;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{line-height: 34px;}
+.select2-container--default .select2-selection--single .select2-selection__arrow{top:4px;}
+.select2-container--default .select2-search--dropdown .select2-search__field{padding-right:20px;background: url('../../basejs/plugins/select2/dist/css/select2.png') no-repeat 100% -22px;}
+.select2-container--default .select2-results__option[aria-selected=true]{background: #fff;}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{background: #29b6f6;color: #fff;}
+.select2-results__option{padding: 4px 6px}
+.select2-results__options{padding: 5px;}
+/*下拉框 end*/
+
+/*信息类弹出框的样式 start*/
+h4.modal-title{font-size: 16px;color: #333333;margin-bottom: 14px;}
+.modal-dialog .form-control,.modal-dialog .select2-chosen{color: #333;}
+input[type="text"].form-control{border:1px solid #ddd;}
+.modal-dialog .checkbox label::after{margin-left:-21px;}
+.modal .modal-dialog .modal-content .modal-footer{padding:20px 0 0; }
+.modal-footer .btn-default{background-color: #f9f9f9 !important;}
+.modal-footer .btn-primary,.modal-footer .btn-primary:hover,.modal-footer .btn-primary:focus{background-color: #00aced !important;border: 1px solid #00aced !important;}
+.sweet-alert button{padding: 10px 30px;}
+.modal-footer .btn-primary{min-width: 115px;}
+
+/*信息类弹出框的样式 end*/
+
+/*删除弹出框 start*/
+.sweet-alert h2{font-size: 22px;}
+.sweet-alert p{font-size: 14px;}
+.sweet-alert button{width: 140px;height: 42px;font-size: 14px;padding: 10px 30px;}
+.sweet-alert button.confirm{background-color: #00aced !important;}
+/*删除弹出框 end*/
+
+/*表格 start*/
+td{white-space:nowrap;}
+.table.table-bordered.dataTable thead th{font-size: 14px;}
+.table.table-bordered.dataTable tbody{font-size: 13px;}
+ div.dataTables_info{color: #616161;}
+ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after{right: 4px;}
+.table .checkbox{ display: inline-block; margin-top: 0; margin-bottom: 0;vertical-align: middle;height: 20px;width:16px;}
+.dataTables_length,.dataTables_info,.pagination,.dataTables_length select{font-size: 12px;color: #616161;}
+/*-------------*/
+.table th.table-df{position: relative;cursor: pointer;}
+.table th.table-df:after{opacity: 0.2;content: "\e150";position: absolute;right: 8px;font-family: 'Glyphicons Halflings';font-weight: normal;}
+.table th.tableHead_desc:after{content: "\e155";opacity: 0.5;}
+.table th.tableHead_asc:after{content: "\e156";opacity: 0.5;}
+/*分页样式*/
+.public_page,.public_page select{font-size: 12px;color: #616161;}
+.public_page .form-inline input.form-control{width: 50px;height: 30px;}
+.public_page .pagination{margin: 0;}
+.public_page .pagination > .active > a,.public_page .pagination li:hover a{border: 1px solid #2b4049; background-color: #2b4049;color: #fff;}
+/*表格 end*/
+
+/*自定义列表*/
+.zxyj-dropdown-menu{max-height: 360px;overflow-y: auto;overflow-x: hidden;}
+.zxyj-dropdown-menu li{font-size: 13px;color: #333;}
+.zxyj-dropdown-menu li label{padding: 5px 0px 5px 15px;width: 150px;cursor: pointer;}
+.zxyj-dropdown-menu li:hover{background: #f2f2f2;}
+.zxyj-dropdown-menu li input[type="checkbox"]{margin-right:5px;vertical-align: top;}
+
+.form-inline .checkbox{height: 16px;}
+
+@media (min-width: 768px){
+    .modal-dialog{font-size: 13px;}
+    .big_modal_position .modal-dialog{width: 1030px;}
+}
+
+/*修改用户权限弹出层样式*/
+.crm_set{padding: 20px 0px; text-align: center}
+.crm_layerBtn{margin-top:15px;}
+.crm_set button{width: 60px;height: 28px;line-height: 28px;border:0;outline: none;color: #fff;}
+.crm_set button.cancel_btn:hover{background: #ccc;}
+.crm_set button.sure_btn{background: #4898d5;}
+.crm_set button.sure_btn:hover{background: #52a6d5;}
+
+@media (max-width: 1280px) and (min-width: 992px){
+    .my_panel .col-lg-3{width: 33%;}
+}
+
+
+@media (min-width:768px){.modal-mf-margin-bottom{width:600px;margin:30px auto 150px;}}
+
+
+.panel{margin-bottom:10px;}
+.none{display:none;}

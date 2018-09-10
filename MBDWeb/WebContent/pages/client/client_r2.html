@@ -1,0 +1,86 @@
+	<div class="content-page">
+		<!-- Start content -->
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 class="pull-left page-title">客户端管理</h4>
+					</div>
+				</div>
+				<form id="clientForm">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">新版本上传</h3>
+								</div>
+								<div class="panel-body">
+									
+									<div class="col-md-7">
+										<div class="form-group">
+											<label for="ctn" class="control-label">当前客户端版本号</label> 
+											<input type="text" class="form-control" disabled="disabled" id="oldVersion" name="oldVersion" value="{oldVersion}">
+									    </div>
+									</div>
+									
+									<div class="col-md-7">
+										<div class="form-group">
+											<label for="ctn" class="control-label">新的客户端版本号</label> 
+											<input type="text" class="form-control" id="newVersion" name="newVersion">
+									    </div>
+									</div>
+									
+									<div class="col-md-2" style="height: 72px; padding-top: 12px;">
+										<div class="form-group">
+											<label class="control-label"></label>
+											<div class="khsh_weixin">
+												<div class="checkbox checkbox-inline">
+													<input type="checkbox" value="1" name="upLevelFlag"><label>客户端必须升级才能在线使用</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-9">
+										<div class="form-group">
+											<label for="ctn" class="control-label">Android安装包</label> 
+											<input type="file" class="file" id="androidPackage" name="androidPackage" data-show-preview="false">
+									    </div>
+									</div>
+									
+									<div class="col-md-9">
+										<div class="form-group">
+											<label for="ctn" class="control-label">Windows安装包</label> 
+											<input type="file" class="file" id="windowsPackage" name="windowsPackage" data-show-preview="false">
+									    </div>
+									</div>
+									
+									<div class="col-md-9">
+										<div class="form-group">
+											<label for="ctn" class="control-label">Mac安装包</label> 
+											<input type="file" class="file" id="macPackage" name="macPackage" data-show-preview="false">
+									    </div>
+									</div>
+									
+									<div class="col-md-9">
+										<div class="form-group">
+											<label for="ctn" class="control-label">iPhone安装包</label> 
+											<input type="file" class="file" id="iPhonePackage" name="iPhonePackage" data-show-preview="false">
+									    </div>
+									</div>
+								</div>
+	
+							</div>
+								<!-- panel-body -->
+							</div>
+							<!-- panel -->
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer col-md-9">
+					<button type="button" class="btn btn-primary"
+						onclick="clientSubmit();">提交</button>
+				</div>
+
+			</div>
+		</div>

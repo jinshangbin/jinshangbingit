@@ -1,0 +1,46 @@
+<list item="result" var="it">
+<tr class="gradeX">
+	<td style="min-width: 70px;">
+	<input  style="display:none;"/>
+	<output>欧洲入境申报费</output>
+	</td>
+	<td style="min-width: 70px;">
+		<select class="select1" style="display:none;min-width: 70px;" 
+		 id="name1_{it.index}"
+		  name="name1"
+		   datauri='drop/querychargelist'
+		    optionuri='common/test/option.html' 
+		    queryname='nameCn'
+		    showname='nameCn'
+		     initval=1 
+		     inittext='a'>
+		</select>
+		<output>单票</output>
+	</td>
+	<td style="min-width: 70px;">
+		<select class="select2" style="min-width:70px;"  id="name2_{it.index}"  name="name2" datauri='drop/querychargelist' optionuri='common/test/option.html' queryname='nameCn' showname='nameCn' initval=1 inittext='a'>
+			<option value="1">aaa</option>
+			<option value="2">bbb</option>
+		</select>
+		<output>11</output>
+		</td>
+	<td style="min-width: 70px;">
+		<select  class="select3" multiple="multiple" style="display:none;min-width: 70px;"  id="name3_{it.index}" name="name3" datauri='drop/querychargelist' optionuri='common/test/option.html' queryname='nameCn' showname='nameCn' initval=1 inittext='a'>
+			<option value="1">aaa</option>
+			<option value="2">bbb</option>
+			<option value="3">CCC</option>
+			<option value="4">DDD</option>
+		</select><output>1700</output></td>
+	<td style="min-width: 70px;"><input  style="display:none;"/><output>1700</output></td>
+	<td style="min-width: 70px;"><input  style="display:none;"/><output>250</output></td>
+	<td style="min-width: 70px;"><input  style="display:none;"/><output>USD</output></td>
+	<td style="min-width: 70px;"><input  style="display:none;"/><output>到付</output></td>
+	<td style="min-width: 70px;"><input  style="display:none;"/><output>2016-05-18</output></td>
+	<td class="actions"><a href="javascript:;" class="hidden on-editing save-row"><i
+			class="fa fa-save"></i></a> <a href="javascript:;"
+		class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a> <a
+		href="javascript:;" class="on-default edit-row"><i class="fa fa-pencil"></i></a> <a
+		href="javascript:;" class="on-default remove-row sa-warning"><i
+			class="fa fa-trash-o"></i></a></td>
+</tr>
+</list>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>下载页</title>
+</head>
+<body>
+
+</body>
+
+<script src="../../basejs/js/jquery.min.js"></script>
+<script>
+
+	var baseUrl = location.protocol + "//" + location.hostname + ( location.port ? ':' + window.location.port: '')+"/MBDServer/";
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	
+	var system = "";
+	if(isAndroid){
+		system = "Android";
+	}
+	if(isiOS){
+		system = "iOS";
+	}
+	
+	$.get(baseUrl + "getVersion", {
+		"system" : system,
+		"version" : "V1.0.0"
+	}, function(res) {
+		window.location.href = res.data.fileUrl;
+	});
+
+</script>
+</html>

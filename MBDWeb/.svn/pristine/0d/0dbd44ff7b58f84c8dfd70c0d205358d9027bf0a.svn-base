@@ -1,0 +1,146 @@
+
+#################订阅运价开始#############################
+#############页面提示################
+i18n.subscription.prompt=click on supplier's name to share tariff
+################列表字段#############
+i18n.subscription.recommended=recomm
+i18n.subscription.supplier=supplier
+i18n.subscription.POL=POL
+i18n.subscription.POD=POD
+i18n.subscription.route=route
+i18n.subscription.carrier=carrier
+i18n.subscription.20GP=20GP
+i18n.subscription.40GP=40GP
+i18n.subscription.40HQ=40HQ
+i18n.subscription.surcharge=surcharge
+i18n.subscription.cut=cut off
+i18n.subscription.sailing=ETD
+i18n.subscription.T=T/T
+i18n.subscription.terminal=terminal
+i18n.subscription.transit=VIA
+i18n.subscription.effective=effective
+i18n.subscription.expiry=expiry
+i18n.subscription.update=update time
+#################查看页面###########
+i18n.subscription.check=check surcharge
+i18n.subscription.charge=charge item
+i18n.subscription.unit=unit
+i18n.subscription.per=per shpt
+i18n.subscription.currency=currency
+i18n.subscription.PP=PP/CC
+i18n.subscription.effective=effective
+i18n.subscription.expiry=expiry
+i18n.subscription.behavior=behavior
+##################订阅页面#############
+i18n.subscription.subscription=share
+i18n.subscription.to=to subscribe
+i18n.subscription.enterprise=enterprise info page
+####按钮#####
+i18n.subscription.submit=submit to website
+i18n.subscription.cancel=cancel share
+i18n.subscription.cancelrelease=cancel release
+i18n.subscription.Subscribetoallfreight=share all
+i18n.subscription.release=release
+
+##下拉###
+i18n.subscription.not=not to delete repeating
+i18n.subscription.low=low price
+i18n.subscription.high=high price
+#############企业优势############
+i18n.subscription.enterprise=enterprise advantage
+i18n.subscription.advantage=advantage port
+i18n.subscription.advantageroute=advantage route
+i18n.subscription.advantagecarrier=advantage carrier
+##联系方式##
+i18n.subscription.contact=contact
+i18n.subscription.registrationcapital=registration capital
+i18n.subscription.companyscale=company scale
+i18n.subscription.companyaddress=company address
+i18n.subscription.companywebsite=company website
+i18n.subscription.keycontact=PIC
+i18n.subscription.phone=phone
+i18n.subscription.cellphone=cellphone
+i18n.subscription.email=email
+i18n.subscription.QRCode=QR Code
+i18n.subscription.tishi.msg=Must fill in a condition!
+i18n.subscription.fabu.msg=Are you sure you want to cancel release?
+i18n.subscription.you.msg=Are you sure you want to unsubscribe?
+i18n.common.layer.deletes=Are you sure you want to delete it?
+#################订阅运价结束#############################
+################弹出框############
+i18n.ranking.Please=Please enter the address
+i18n.ranking.Input=Input address resolution is wrong, please input again!
+#################订阅排名开始#############################
+i18n.ranking.port=port
+i18n.ranking.Shanghai=Shanghai
+i18n.ranking.Shenzhen=Shenzhen
+i18n.ranking.Qingdao=Qingdao
+i18n.ranking.Dalian=Dalian
+i18n.ranking.Xiamen=Xiamen
+i18n.ranking.Ningbo=Ningbo
+i18n.ranking.Guangzhou=Guangzhou
+i18n.ranking.Tianjin=Tianjin
+
+i18n.ranking.subscription=share ranking
+i18n.ranking.DBA =DBA recommendation
+i18n.ranking.new=new members
+i18n.ranking.week=week
+i18n.ranking.month=month
+i18n.ranking.overall=overall
+i18n.ranking.detail=detail
+#################订阅排名结束#############################
+
+
+#################订阅需求开始#############################
+i18n.demand.subscription=share request
+i18n.demand.myrequesting=my requesting
+i18n.demand.submittime=submit time
+i18n.demand.checkreply=check reply
+i18n.demand.reply=reply
+i18n.demand.save=save
+i18n.demand.close=close
+i18n.demand.content=content
+i18n.demand.text=300 words in maximum
+i18n.demand.delete=delete
+i18n.demand.Demand.msg=Demand cannot be empty
+i18n.demand.Demandinformation=Demand information
+i18n.demand.huifu.msg=Reply to success
+i18n.demand.shibai.msg=Respond to failure
+i18n.demand.notNull.msg=Reply can't be empty
+i18n.demand.Content.msg=Content is too long
+#################订阅需求结束#############################
+
+
+#################订阅记录开始#############################
+i18n.subscription.subscriptionrecord=share record
+i18n.subscription.subscriptiondetail=share detail
+i18n.subscription.editsubscription=edit share
+i18n.subscription.unsubscribe=unsubscribe
+i18n.subscription.tariffquantity=tariff quantity
+i18n.subscription.pcs=pcs
+i18n.subscription.time=time
+i18n.subscription.no=No content
+i18n.subscription.by=By share
+i18n.subscription.subscribed=share
+i18n.subscription.advantages=advantages
+i18n.subscription.Freightamount=Freight amount
+#################订阅记录结束#############################
+
+
+#################被订阅记录开始#############################
+i18n.besubscribed.subscriptionrecord=bshare record
+
+i18n.besubscribed.companyname=company name
+i18n.besubscribed.please.msg=please  input company name
+i18n.besubscribed.audit=audit status
+i18n.besubscribed.Normal=Normal
+i18n.besubscribed.Reject=Reject
+i18n.besubscribed.subscriptionquantity=share quantity
+i18n.besubscribed.subscriptiontime=share time
+i18n.besubscribed.subscriptionstatus=share status
+i18n.besubscribed.status=status
+i18n.besubscribed.operation=operation
+i18n.besubscribed.recover=recover
+i18n.besubscribed.reject=reject
+#################被订阅记录结束#############################
+

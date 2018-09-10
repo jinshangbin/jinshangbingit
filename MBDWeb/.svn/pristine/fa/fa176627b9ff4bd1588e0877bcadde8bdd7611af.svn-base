@@ -1,0 +1,37 @@
+abc{limit}
+<list item="result" var="it">
+<tr>
+	<td style="min-width: 30px;" class="text-center">
+		<div class="checkbox checkbox-info checkbox_noborder">
+			<input type="checkbox" name='{}'> <label></label>
+		</div>
+	</td>
+	<td style="min-width: 50px">已发布</td>
+	<td style="min-width: 50px"><img src="images/price.png"></td>
+	<td style="min-width: 60px">{it.index}</td>
+	<td style="min-width: 60px">{it.nameCn}</td>
+	<td style="min-width: 60px">{it.nameEn}</td>
+	<td style="min-width: 40px">{limit}</td>
+	<td style="min-width: 40px">10</td>
+	<td style="min-width: 40px">10</td>
+	<td style="min-width: 60px"><span class="blue cursor"
+		data-toggle="modal" data-target="#look_member_Modal">查看</span></td>
+	<td style="min-width: 60px"><span class="blue cursor"
+		data-toggle="modal" data-target="#look_surcharge_Modal">查看</span></td>
+	<td style="min-width: 50px">周二</td>
+	<td style="min-width: 50px">上海外一</td>
+	<td style="min-width: 50px">航程</td>
+	<td style="min-width: 60px">2016-05-10</td>
+	<td style="min-width: 60px">2016-05-12</td>
+</tr>
+</list>
+<list item="result" var="it2">
+aaa
+</list>
+<list item="result" var="it3">
+bbb
+</list>
+abcd{limit}
+<if test="{limit}==10">
+xxx
+</if>

@@ -1,0 +1,380 @@
+<div class="modal_position big_modal_position">
+	<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">新增</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">起运港</label>
+								<select class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="上海">上海</option>
+									<option value="北京">北京</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_boat fjf_panduan">
+								<label class="control-label">船公司</label>
+								<select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="船公司1">船公司1</option>
+									<option value="船公司2">船公司2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_route fjf_panduan">
+								<label class="control-label">航线</label>
+								<select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="航线1">航线1</option>
+									<option value="航线2">航线2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_destination">
+								<label class="control-label">目的港</label>
+								<select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="航线1">航线1</option>
+									<option value="航线2">航线2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="errorFont">备注：船公司多选时，航线单选反之亦然。目的港：当航线多选时，目的港不允许添加；当航线为一个时，目的港允许多选</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="my_tableBtn">
+								<button class="btn btn-default pull-left waves-effect m-b-5 addToTable">
+									新增&nbsp;<span class="fa fa-plus"></span>
+								</button>
+								<button class="btn btn-default pull-left waves-effect m-b-5">
+									获取系统附加费&nbsp;<span class="fa fa-hand-pointer-o"></span>
+								</button>
+							</div>
+							<table class="table table-bordered table-striped datatable-editable datatable-editable-one" id="datatable-editable">
+								<thead>
+									<tr>
+										<th>费用名称</th>
+										<th>单位</th>
+										<th>20GP</th>
+										<th>40GP</th>
+										<th>40HQ</th>
+										<th>单票</th>
+										<th>币种</th>
+										<th>到预付</th>
+										<th>生效日期</th>
+										<th>行为</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="gradeX">
+										<td style="min-width: 70px;">欧洲入境申报费</td>
+										<td style="min-width: 70px;">单票</td>
+										<td style="min-width: 50px;">1700</td>
+										<td style="min-width: 50px;">1700</td>
+										<td style="min-width: 50px;">1700</td>
+										<td style="min-width: 50px;">250</td>
+										<td style="min-width: 70px;">USD</td>
+										<td style="min-width: 70px;">到付</td>
+										<td style="min-width: 70px;">2016-05-18</td>
+										<td class="actions"><a href="" class="hidden on-editing save-row"><i class="fa fa-save"></i></a> <a href="" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a> <a href="" class="on-default edit-row"><i class="fa fa-pencil"></i></a> <a href="" class="on-default remove-row sa-warning"><i class="fa fa-trash-o"></i></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+	<div class="modal fade" id="re_editeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">批量修改</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">费用名称</label> <select class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="费用名称">费用名称</option>
+									<option value="费用名称">费用名称</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">单位</label> <select class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="单位">单位</option>
+									<option value="单位">单位</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">币种</label> <select class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="人民币">人民币</option>
+									<option value="美元">美元</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">到预付</label> <select class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="到预付">到预付</option>
+									<option value="到预付">到预付</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">20GP</label> <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">40GP</label> <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">40HQ</label> <input type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">单票</label> <input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">生效日期</label>
+								<div class="input-group">
+									<input type="text" class="form-control datepicker" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+								</div>
+								<!-- input-group -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">失效日期</label>
+								<div class="input-group">
+									<input type="text" class="form-control datepicker" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+								</div>
+								<!-- input-group -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+	<div class="modal fade" id="editeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">详情</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">起运港</label> <select id="edit_start_port" class="select2 form-control">
+									<option value="#">&nbsp;</option>
+									<option value="上海">上海</option>
+									<option value="北京">北京</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_boat fjf_panduan">
+								<label class="control-label">船公司</label> <select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="船公司1">船公司1</option>
+									<option value="船公司2">船公司2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_route fjf_panduan">
+								<label class="control-label">航线</label> <select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="航线1">航线1</option>
+									<option value="航线2">航线2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group fjf_destination">
+								<label class="control-label">目的港</label> <select class="select2 form-control" multiple>
+									<option value="#">&nbsp;</option>
+									<option value="航线1">航线1</option>
+									<option value="航线2">航线2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="errorFont">备注：船公司多选时，航线单选反之亦然。目的港：当航线多选时，目的港不允许添加；当航线为一个时，目的港允许多选</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="my_tableBtn">
+								<button class="btn btn-default pull-left waves-effect m-b-5 addToTable_tow">
+									新增&nbsp;<span class="fa fa-plus"></span>
+								</button>
+								<button class="btn btn-default pull-left waves-effect m-b-5">
+									获取系统附加费&nbsp;<span class="fa fa-hand-lizard-o"></span>
+								</button>
+							</div>
+							<table class="table table-bordered table-striped datatable-editable datatable-editable_tow">
+								<thead>
+									<tr>
+										<th>费用名称</th>
+										<th>单位</th>
+										<th>20GP</th>
+										<th>40GP</th>
+										<th>40HQ</th>
+										<th>单票</th>
+										<th>币种</th>
+										<th>到预付</th>
+										<th>生效日期</th>
+										<th>行为</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="gradeX">
+										<td style="min-width: 70px;">欧洲入境申报费</td>
+										<td style="min-width: 70px;">单票</td>
+										<td style="min-width: 70px;">1700</td>
+										<td style="min-width: 70px;">1700</td>
+										<td style="min-width: 70px;">1700</td>
+										<td style="min-width: 70px;">250</td>
+										<td style="min-width: 70px;">USD</td>
+										<td style="min-width: 70px;">到付</td>
+										<td style="min-width: 70px;">2016-05-13</td>
+										<td class="actions"><a href="" class="hidden on-editing save-row"><i class="fa fa-save"></i></a> <a href="" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a> <a href="" class="on-default edit-row"><i class="fa fa-pencil"></i></a> <a href="" class="on-default remove-row sa-warning"><i class="fa fa-trash-o"></i></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+</div>
+<!-- <script src="basejs/edite_layer/zhengxiang_tables.js"></script> -->
+<!-- <script src="basejs/js/datatables.editable.init.js"></script> -->
+<!--table_cover -->
+<!-- <script src="basejs/edite_layer/zhengxiang_tables.js"></script> -->
+<!-- <script src="basejs/js/hasCheckbox_table.js"></script> -->
+<script src="common/inittable.js"></script>
+<script src="common/initedittable.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+
+		//下拉多选 
+		querySelect2BySearch("startport", '请输入起运港', "drop/querychargelist", "common/test/option.html", 'nameCn', 'nameCn', '1', 'a');
+		querySelect2NoSearch("endport", '请输入目的港', "drop/querychargelist", "common/test/option.html", 'nameCn', 'nameCn', '3', 'c');
+		querySelect2multiple("line", '请输入航线', "drop/querychargelist", "common/test/option.html", 'nameCn', 'nameCn', '1,2', 'a,b');
+		$("#searchAll").bind("click", function(e) {
+			searchFujiafei();
+		});
+		$("#searchAll").click();
+		//日历插件 
+		jQuery('.datepicker').datetimepicker({
+			format : 'yyyy-mm-dd'
+		});
+		//双击打开编辑框 
+		$(".maintable tbody").dblclick(function(e) {
+			var td = $(e.target);
+			var tr = $(td.parents("tr")[0]);
+			var id = tr.find('[name=checkList]:checkbox').val();
+			initEdit(id);
+		});
+
+	});
+
+	function searchFujiafei() {
+		renderTable('applyport/queryportlist?pageNo=1', "a=b", 'fujiafeitable', 'common/test/fujiafei/tr.html');
+	}
+
+	function initEdit(id) {
+		//处理初始化数据
+		var data = render("editeModal", "common/test/fujiafei/fujiafei_edit.html", "country/querybyid?id=" + id, null);
+			//初始化复选框
+			// 		var valarray = new Array();
+			// 		valarray[0]='';
+			// 		valarray[1]='b';
+			// 		initCheckBox("abc",valarray); 
+		querySelect2BySearch("edit_start_port", '请输入起运港', "drop/querychargelist", "common/test/option.html", 'nameCn', 'nameCn', '1', 'a');
+		//处理初始化列表数据
+		renderTable('applyport/queryportlist?pageNo=1', "a=b", 'fujiaeditTable', 'common/test/fujiafei/edit_tr.html');
+		//初始化可编辑列表
+		initEditAbleTable('common/test/fujiafei/edit_tr.html', 'applyport/queryportlist?pageNo=1', 'applyport/queryportlist?pageNo=1', null);
+		$('#editeModal').modal('show');
+		//初始化可编辑列表的新增标签
+		initAddRowButton();
+	}
+	function initAddRowButton() {
+		$("button.addToTable_tow").on('click', function(e) {
+			var table = findNode($(e.target), "table")[0];
+			var tbody = $(table).find("tbody")[0];
+			var tr = getPage('common/test/fujiafei/edit_tr.html');
+			var len = $(tbody).find("tr").length;
+			len = (len == null ? 1 : len);
+			tr = tr.replaceAll(/{it.index}/g, len + 1).replace(/<list([\s\S]*?)>/g, '').replace(/<\/list>/g, '').replaceAll(/{([\s\S]*?)}/g, '');
+			$(tbody).prepend(tr);
+			initEditAbleTable('common/test/fujiafei/edit_tr.html', 'applyport/queryportlist?pageNo=1', 'applyport/queryportlist?pageNo=1', null);
+			$($($(tbody).find("tr")[0]).find("a.edit-row")[0]).click();
+			return true;
+		});
+	}
+</script>

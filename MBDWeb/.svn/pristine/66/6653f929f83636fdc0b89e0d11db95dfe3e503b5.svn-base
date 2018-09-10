@@ -1,0 +1,273 @@
+<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h4 class="modal-title">编辑</h4>
+					</div>
+					<div class="modal-body zx_checkboxPadding">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">起运港</label> 
+									<select id="edit_start_port"
+										class="select2 form-control">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">目的港</label> <select
+										class="select2 form-control">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">船公司</label> <select
+										class="select2 form-control">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">航线</label> <select
+										class="select2 form-control"
+										data-placeholder="Choose a Country...">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">航线代码</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">航程</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label>班期:</label>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周一</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周二</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周三</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周四</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周五</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周六</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>周日</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label>截关日:</label>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" name="abc" value="1"> <label>周一</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" name="abc"  value="2"> <label>周二</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" name="abc"  value="3"> <label>周三</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" name="abc"  value="4"> <label>周四</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox"  name="abc" value="5"> <label>周五</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" name="abc" value="6"> <label>周六</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox"  name="abc" value="7"> <label>周日</label>
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">港区</label> <select
+										class="select2 form-control"
+										data-placeholder="Choose a Country...">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">中转港</label> <select
+										class="select2 form-control"
+										data-placeholder="Choose a Country...">
+										<option value="#">&nbsp;</option>
+										<option value="上海">上海</option>
+										<option value="北京">北京</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">生效日期</label>
+									<div class="input-group">
+										<input id="haha" type="text" class="form-control datepicker"
+											placeholder="mm/dd/yyyy"> <span
+											class="input-group-addon"><i
+											class="glyphicon glyphicon-calendar"></i></span>
+									</div>
+									<!-- input-group -->
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">失效日期</label>
+									<div class="input-group">
+										<input type="text" class="form-control datepicker"
+											placeholder="mm/dd/yyyy"> <span
+											class="input-group-addon"><i
+											class="glyphicon glyphicon-calendar"></i></span>
+									</div>
+									<!-- input-group -->
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">共舱方</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">目的港挂靠</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">舱位情况</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class="control-label">舱位数量</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">约号</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label>特价:</label>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>选此框，保证此价格为最低价格</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label>电询:</label>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>勾选此框，船公司将显示为电询</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label>提单类型:</label>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>海单</label>
+								</div>
+								<div class="checkbox checkbox-inline">
+									<input type="checkbox" value="option1"> <label>代理单</label>
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">20GP</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">40GP</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">40HQ</label> <input type="text"
+										class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">限重说明</label>
+									<textarea rows="4" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">外部备注（对外展示）</label>
+									<textarea rows="4" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class="control-label">内部备注（公司内部）</label>
+									<textarea rows="4" class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">保存</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->

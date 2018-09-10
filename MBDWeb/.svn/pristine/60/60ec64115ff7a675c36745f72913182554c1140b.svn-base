@@ -1,0 +1,12 @@
+<div id="to_r">
+	
+</div>
+
+<script src="common/qrcode.js"></script>
+<script src="js/download/downLoad.js"></script>
+
+<script>
+    jQuery(document).ready(function($) {
+    	initSys();
+    });
+</script>

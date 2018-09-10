@@ -1,0 +1,117 @@
+   <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="pull-left page-title">附加费维护</h4>
+                    </div>
+                </div>
+                <div class="panel my_panel">
+                    <div class="panel-body">
+                        <div class="col-lg-11 col-md-10">
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">起运港：</label>
+                                        <div class="col-md-8">
+                                            <select id="startport" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">目的港：</label>
+                                        <div class="col-md-8">
+                                            <select id="endport" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">船公司：</label>
+                                        <div class="col-md-8">
+                                            <select id="line" multiple="multiple" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">航线：</label>
+                                        <div class="col-md-8">
+                                            <select class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2">
+                            <button type="button" id="searchAll"  class="btn btn-info waves-effect waves-light m-b-5">搜索</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my_tableBtn">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                                        <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#addModal"> 新增&nbsp;<span class="fa fa-plus"></span> </button>
+                                        <button class="btn btn-default pull-left waves-effect m-b-5 sa-warning redHover_btn">删除&nbsp;<span class="fa fa-remove"></span></button>
+                                        <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#re_editeModal">批量修改&nbsp;<span class="fa fa-pencil"></span> </button>
+                                        <div class="pull-right search_input"> 搜索：
+                                            <label>
+                                                <input type="search" class="dsearch form-control input-sm" placeholder="中文名称/英文名称" aria-controls="datatable"></label>
+                                        </div>
+                                        <table id="fujiafeitable" class="table maintable table-striped table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 40px;" class="text-center">
+                                                    <div class="checkbox checkbox-info checkbox_noborder checkAll">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                </th>
+                                                <th class="table-df" style="min-width:80px;">起运港</th>
+                                                <th class="table-df" style="min-width:80px;">船公司</th>
+                                                <th class="table-df" style="min-width: 60px;">航线</th>
+                                                <th class="table-df" style="min-width:80px;">目的港</th>
+                                                <th class="table-df" style="min-width:90px;">操作时间</th>
+                                                <th class="table-df" style="min-width: 80px;">操作人</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="tbody">
+                                           </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- content -->
+    </div>
+ 

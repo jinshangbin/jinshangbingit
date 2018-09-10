@@ -1,0 +1,92 @@
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        详情
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label  class="control-label">起运港</label>
+                                <select id="edit_start_port" class="select2 form-control">
+                                    <option value="#">&nbsp;</option>
+                                    <option value="上海">上海</option>
+                                    <option value="北京">北京</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group fjf_boat fjf_panduan">
+                                <label class="control-label">船公司</label>
+                                <select class="select2 form-control" multiple>
+                                    <option value="#">&nbsp;</option>
+                                    <option value="船公司1">船公司1</option>
+                                    <option value="船公司2">船公司2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group fjf_route fjf_panduan">
+                                <label class="control-label">航线</label>
+                                <select class="select2 form-control" multiple>
+                                    <option value="#">&nbsp;</option>
+                                    <option value="航线1">航线1</option>
+                                    <option value="航线2">航线2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group fjf_destination">
+                                <label class="control-label">目的港</label>
+                                <select class="select2 form-control" multiple>
+                                    <option value="#">&nbsp;</option>
+                                    <option value="航线1">航线1</option>
+                                    <option value="航线2">航线2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-12">
+                           <p class="errorFont">备注：船公司多选时，航线单选反之亦然。目的港：当航线多选时，目的港不允许添加；当航线为一个时，目的港允许多选</p>
+                       </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12" style="overflow: auto;">
+                          <div class="my_tableBtn">
+                              <button class="btn btn-default pull-left waves-effect m-b-5 addToTable_tow"> 新增&nbsp;<span class="fa fa-plus"></span> </button>
+                              <button class="btn btn-default pull-left waves-effect m-b-5"> 获取系统附加费&nbsp;<span class="fa fa-hand-pointer-o"></span> </button>
+                          </div>
+                          <table id="fujiaeditTable" class="table table-bordered table-striped datatable-editable datatable-editable_tow">
+                              <thead>
+                              <tr>
+                                  <th>费用名称</th>
+                                  <th>单位</th>
+                                  <th>20GP</th>
+                                  <th>40GP</th>
+                                  <th>40HQ</th>
+                                  <th>单票</th>
+                                  <th>币种</th>
+                                  <th>到预付</th>
+                                  <th>生效日期</th>
+                                  <th>行为</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                          </table>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->

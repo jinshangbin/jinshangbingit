@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>web socket</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var wsServer = 'wss://api.huobi.pro/ws'; //服务器地址
+	var websocket = new WebSocket(wsServer); //创建WebSocket对象
+	
+	
+	websocket.onopen = function(evt) {
+		//已经建立连接
+		alert("已经建立连接")
+		
+		var data = {
+			"sub": "market.btcusdt.kline.1min",
+			"id": "id10"
+			};
+		
+		websocket.send({"ping": 1523778470416});
+	};
+	websocket.onclose = function(evt) {
+		//已经关闭连接
+	};
+	websocket.onmessage = function(evt) {
+		//收到服务器消息，使用evt.data提取
+		alert(evt.data);
+	};
+	websocket.onerror = function(evt) {
+		//产生异常
+	};
+
+</script>
+</html>

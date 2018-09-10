@@ -1,0 +1,120 @@
+
+#################系统信息开始#############################
+##########账号信息开始##########
+i18n.system.company.system_info=System Info
+i18n.system.company.account_info=Account Info (company contact info)
+i18n.system.company.headportraits=Profile Picture
+i18n.system.company.clickupload=click to upload
+i18n.system.company.password=Password
+i18n.system.company.newPwd=New Password
+i18n.system.company.newPwdNotNull=New password not null！
+i18n.system.company.pwdSet=Password Settings
+i18n.system.company.modification=(Update)
+i18n.system.company.name=Name
+i18n.system.company.email=Email
+i18n.system.company.mobilephone=Cellphone
+i18n.system.company.phone=Phone
+i18n.system.company.fax=Fax
+##########账号信息结束##########
+##########公司信息开始##########
+i18n.system.company.conpany_info=Company Info
+i18n.system.company.company_name=Company Name
+i18n.system.company.companyname_notnull=company name is not empty
+i18n.system.company.english_name=English Name
+i18n.system.company.companyabbr=Companyabbr
+i18n.system.company.companyabbr_notnull=companyabbr is not empty
+i18n.system.company.zipcode=Zip Code
+i18n.system.company.companyScale=Company Scale
+i18n.system.company.companyScale_sel=Please select company scale
+i18n.system.company.legalPerson=Company Legal Representative
+i18n.system.company.registrationCapital=Registration Capital
+i18n.system.company.companyNature=Company Type
+i18n.system.company.companyNature_sel=Please select company type
+i18n.system.company.companyAddress=Company Address
+i18n.system.company.companyAddress_notnull=company address is not empty
+##########公司信息结束##########
+##########资质信息开始##########
+i18n.system.company.qualification_info=Qualification Info
+i18n.system.company.businessLicense=Business License
+i18n.system.company.frameworkCode=Framework Code
+i18n.system.company.taxRegistration=Tax Registration Certification
+##########资质信息结束##########
+##########我的系统开始##########
+i18n.system.company.mySystem=my system
+i18n.system.company.wechat=Wechat
+i18n.system.company.backstage=Backstage
+i18n.system.company.website=Website
+##########我的系统结束##########
+#################系统信息结束#############################
+
+
+#################组织架构开始#############################
+##########下拉框text开始##########
+i18n.system.dept.department_sel=Please select a department
+i18n.system.dept.role_sel=Please select a role
+i18n.system.dept.freightLevel_sel=Please select a level of freight
+i18n.system.dept.port_sel=Please select a port
+i18n.system.dept.route_sel=Please select a route
+i18n.system.dept.shippingCompany_sel=Please select a shipping company
+##########下拉框text结束##########
+i18n.system.dept.framework=Framework
+i18n.system.dept.employerManagement=Employer Management
+i18n.system.dept.disable=Block
+i18n.system.dept.toDisable=confirm to block?
+i18n.system.dept.resDisable=Block success！
+i18n.system.dept.activate=Activate
+i18n.system.dept.toActivate=confirm to activate?
+i18n.system.dept.resActivate=Activate success！
+i18n.system.dept.status=Status
+i18n.system.dept.customerService=C/S
+i18n.system.dept.userName=User Name
+i18n.system.dept.userName_verify=User name not null|Only in English or a number
+i18n.system.dept.name=Name
+i18n.system.dept.name_verify=name not null|Names can only type in Chinese and English
+i18n.system.dept.mobilephone=Cellphone
+i18n.system.dept.mobilephone_verify=Cellphone not null|Mobile phone number can't more than 11
+i18n.system.dept.phone=Office number
+i18n.system.dept.phone_verify=Office number not null|Office phone no more than 30
+i18n.system.dept.email=Email
+i18n.system.dept.email_verify=Email format error
+i18n.system.dept.qq_verify=QQ not null|QQ format error
+i18n.system.dept.skype=SKYPE
+i18n.system.dept.department=Department
+i18n.system.dept.role=Role
+i18n.system.dept.password=Password
+i18n.system.dept.password_verify=Password not null|Only in English or a number
+i18n.system.dept.rePwd=Confirm password
+i18n.system.dept.rePwd_verify=Confirm password not null|Only in English or a number
+i18n.system.dept.pwdAndRePwd=Two password you entered is not consistent！
+i18n.system.dept.editHint_one=enter into note --
+i18n.system.dept.editHint_two=edit status？
+i18n.system.dept.deleteNote=Confirm delete note --
+i18n.system.dept.nodeNotNull=Node name cannot be empty！
+i18n.system.dept.addDept=Increase the department
+i18n.system.dept.userLevel=User level
+i18n.system.dept.dept=dept
+i18n.system.dept.gender=gender
+i18n.system.dept.male=male
+i18n.system.dept.female=female
+i18n.system.dept.onlineCustomerService=Online C/S
+i18n.system.dept.tariffLevel=tariff level--FL
+i18n.system.dept.dataAuthority=data authority
+i18n.system.dept.individual=individual
+i18n.system.dept.company=company
+i18n.system.dept.updateAuthority_port=edit auth--port
+i18n.system.dept.updateAuthority_route=edit auth--route
+i18n.system.dept.updateAuthority_carrier=edit auth--carrier
+#################组织架构结束#############################
+
+#################角色设置开始#############################
+i18n.system.role.roleset=Role Set
+i18n.system.role.roleName=Role
+i18n.system.role.addrole=Add Role
+i18n.system.role.deletemsg=Please select a data！
+i18n.system.role.permissions_msg=Please set the permissions
+i18n.system.role.editrole=Edit Role
+i18n.system.role.position=Role Name
+i18n.system.role.position.notnull=post name not null
+i18n.system.role.permission=Set Authority
+#################角色设置结束#############################
+

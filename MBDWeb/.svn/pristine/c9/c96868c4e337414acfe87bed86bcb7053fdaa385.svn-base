@@ -1,0 +1,219 @@
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    <shiro url="common/reset">1asdfdsaf</shiro>
+                     <shiro url="common/reset">sadfdsafsadf2</shiro>
+                     <shiro url="common/reset">safddsafsa3</shiro>
+                        <h4 class="pull-left page-title">运价维护</h4>
+                    </div>
+
+                </div>
+                <div class="panel my_panel">
+                    <div class="panel-body">
+                        <div class="col-lg-11 col-md-10">
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">起运港：</label>
+                                        <div class="col-md-8">
+                                            <select id="startport" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">目的港：</label>
+                                        <div class="col-md-8">
+                                            <select id="endport" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">航线：</label>
+                                        <div class="col-md-8">
+                                            <select id="line" class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <form action="#" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label label_font">船公司：</label>
+                                        <div class="col-md-8">
+                                            <select class="select2 form-control" data-placeholder="Choose a Country...">
+                                                <option value="#">&nbsp;</option>
+                                                <option value="shanghai">shanghai</option>
+                                                <option value="beijing">beijing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-2">
+                            <button type="button" id="searchAll" onclick="searchzx();return false;" class="btn btn-info waves-effect waves-light m-b-5">搜索</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default jisuan_panel">
+                            <div class="panel-body">
+                                <div class="row clearfix">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="pull-left my_tableBtn">
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#addModal">新增&nbsp;<span class="fa fa-plus"></span> </button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#copyModal"> 复制&nbsp;<span class="fa fa-clone"></span> </button>
+                                                    <a class="btn btn-default pull-left waves-effect m-b-5" href="import.html"> 导入&nbsp;<span class="fa fa-file-text"></span> </a>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#editeModal"> 批量修改&nbsp;<span class="fa fa-pencil"></span> </button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5 sa-warning redHover_btn">删除&nbsp;<span class="fa fa-remove"></span></button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5 fabu-warning">发布&nbsp;<span class="fa fa-pencil-square-o"></span></button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5 fabuCancel-warning">取消发布&nbsp;<span class="fa fa-rotate-left"></span></button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5 tejia-warning">设为特价&nbsp;<span class="fa fa-tags"></span></button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5 tejiacancel-warning">取消特价&nbsp;<span class="fa fa-reply"></span></button>
+                                                    <button class="btn btn-default pull-left waves-effect m-b-5" data-toggle="modal" data-target="#export_Modal">导出&nbsp;<span class="fa fa-folder-open"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="dropdown pull-right zx_defalut_list">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu1"
+                                                            data-toggle="dropdown"> 自定义列表<span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu zxyj-dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation">
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="1" checked/>发布</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="2" checked/>特价</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="3" checked/>起运港</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="4" checked/>目的港</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="5" checked/>船公司</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="6" checked/>20GP</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="7" checked/>40GP</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="8" checked/>40HQ</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="9" checked/>会员价</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="10" checked/>附加费</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="11" checked/>班期</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="12"/>截关期</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="13" checked/>航程</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="14" checked/>港区</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="15"/>中转港</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="16"/>航线</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="17"/>航线代码</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="18" checked/>生效日期</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="19" checked/>失效日期</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="20"/>操作时间</label>
+                                                        </li>
+                                                        <li>
+                                                            <label><input type="checkbox" class="toggle-vis" data-column="21"/>操作人</label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12" style="overflow: auto;">
+                                        <table id="zxtable" class="table maintable table-striped table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th  class="text-center">
+                                                    <div class="checkbox checkbox-info checkbox_noborder checkAll">
+                                                        <input type="checkbox" name="abc">
+                                                        <label></label>
+                                                    </div>
+                                                </th>
+                                                <th>发布</th>
+                                                <th>特价</th>
+                                                <th>起运港</th>
+                                                <th>目的港</th>
+                                                <th>船公司</th>
+                                                <th>20GP</th>
+                                                <th>40GP</th>
+                                                <th>40HQ</th>
+                                                <th>会员价</th>
+                                                <th>附加费</th>
+                                                <th>班期</th>
+                                                <th>截关期</th>
+                                                <th>航程</th>
+                                                <th>港区</th>
+                                                <th>中转港</th>
+                                                <th>航线</th>
+                                                <th>航线代码</th>
+                                                <th>生效日期</th>
+                                                <th>失效日期</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Row -->
+            </div> <!-- container -->
+        </div> <!-- content -->
+    </div>

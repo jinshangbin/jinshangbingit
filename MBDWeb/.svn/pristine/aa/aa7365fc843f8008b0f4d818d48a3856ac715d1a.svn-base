@@ -1,0 +1,284 @@
+
+
+<!-- Begin page -->
+<div id="wrapper">
+
+	<!-- Top Bar Start -->
+	<div class="topbar">
+		<!-- LOGO -->
+		<div class="topbar-left">
+			<div class="text-center">
+				<a href="index.html" class="logo"><i class=""><img
+						src="basedark/images/logo.jpg"></i> <span>RUIDA</span></a>
+			</div>
+		</div>
+		<!-- Button mobile view to collapse sidebar menu -->
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="">
+					<div class="pull-left">
+						<button class="button-menu-mobile open-left">
+							<i class="fa fa-bars"></i>
+						</button>
+						<span class="clearfix"></span>
+					</div>
+					<h3 class="pull-left menu_topH ">密保盾管理平台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</h3>
+					<ul class="nav navbar-nav navbar-right pull-right">
+
+						<li class="hidden-xs"><a href="#"
+							class="waves-effect">您好，XXX，欢迎使用密保盾产品</a></li>
+						
+						<li class="dropdown"><a href=""
+							class="dropdown-toggle profile" data-toggle="dropdown"
+							aria-expanded="true"><span
+								class="md md-settings layout_settting"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:void(0)"
+									onclick="loginOut();return false;"><i
+										class="md md-settings-power"></i>&nbsp;<span>退出</span></a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<!-- Top Bar End -->
+
+	<div class="left side-menu">
+		<div class="sidebar-inner slimscrollleft">
+			<div class="content-page"></div>
+			<!--- Divider -->
+			<div id="sidebar-menu">
+				<ul id="MainHome">
+					<li><a href="javascript:;"
+						class="waves-effect waves-light active"><i class="md md-home"></i><span>
+								Home </span></a></li>
+								
+					<li class="has_sub"><a href="javascript:void(0);"
+						class="waves-effect waves-light"><i><img
+								src="basedark/images/icon/kehu.png"></i><span>管理</span><span
+							class="pull-right"><i class="md md-add"></i></span></a>
+						<ul class="list-unstyled">
+							
+							<li><a href="javascript:;"
+								onclick="ajaxPage('pages/client/client_r.html');return false;">客户端管理</a></li>
+							
+							<li><a href="javascript:;"
+								onclick="ajaxPage('pages/download/downLoad_r.html');return false;">下载软件</a></li>
+						</ul>
+					</li>			
+				</ul>
+				
+				
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- Left Sidebar End -->
+
+</div>
+<!-- END wrapper -->
+
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+
+						$
+								.getScript(
+										"basejs/js/base.js",
+										function(data, status, jqxhr) {
+											$
+													.getScript(
+															"basejs/js/bootstrap.min.js",
+															function(data,
+																	status,
+																	jqxhr) {
+																$
+																		.getScript(
+																				"basejs/js/detect.js",
+																				function(
+																						data,
+																						status,
+																						jqxhr) {
+																					$
+																							.getScript(
+																									"basejs/js/fastclick.js",
+																									function(
+																											data,
+																											status,
+																											jqxhr) {
+																										$
+																												.getScript(
+																														"basejs/js/jquery.slimscroll.js",
+																														function(
+																																data,
+																																status,
+																																jqxhr) {
+																															$
+																																	.getScript(
+																																			"basejs/js/jquery.blockUI.js",
+																																			function(
+																																					data,
+																																					status,
+																																					jqxhr) {
+																																				$
+																																						.getScript(
+																																								"basejs/js/waves.js",
+																																								function(
+																																										data,
+																																										status,
+																																										jqxhr) {
+																																									$
+																																											.getScript(
+																																													"basejs/js/wow.min.js",
+																																													function(
+																																															data,
+																																															status,
+																																															jqxhr) {
+																																														$
+																																																.getScript(
+																																																		"basejs/js/jquery.nicescroll.js",
+																																																		function(
+																																																				data,
+																																																				status,
+																																																				jqxhr) {
+																																																			$
+																																																					.getScript(
+																																																							"basejs/js/jquery.scrollTo.min.js",
+																																																							function(
+																																																									data,
+																																																									status,
+																																																									jqxhr) {
+																																																								$
+																																																										.getScript(
+																																																												"basejs/js/jquery.app.js",
+																																																												function(
+																																																														data,
+																																																														status,
+																																																														jqxhr) {
+																																																													$
+																																																															.getScript(
+																																																																	"basejs/js/jquery.json-2.3.min.js",
+																																																																	function(
+																																																																			data,
+																																																																			status,
+																																																																			jqxhr) {
+
+																																																																		$
+																																																																				.getScript(
+																																																																						"basejs/plugins/datatables/jquery.dataTables.min.js",
+																																																																						function(
+																																																																								data,
+																																																																								status,
+																																																																								jqxhr) {
+																																																																							$
+																																																																									.getScript(
+																																																																											"basejs/plugins/datatables/dataTables.bootstrap.js",
+																																																																											function(
+																																																																													data,
+																																																																													status,
+																																																																													jqxhr) {
+																																																																												$
+																																																																														.getScript(
+																																																																																"basejs/js/datatables.init.js",
+																																																																																function(
+																																																																																		data,
+																																																																																		status,
+																																																																																		jqxhr) {
+
+																																																																																	$
+																																																																																			.getScript(
+																																																																																					"basejs/plugins/sweetalert/dist/sweetalert.min.js",
+																																																																																					function(
+																																																																																							data,
+																																																																																							status,
+																																																																																							jqxhr) {
+																																																																																						$
+																																																																																								.getScript(
+																																																																																										"basejs/js/jquery.sweet-alert.init.js",
+																																																																																										function(
+																																																																																												data,
+																																																																																												status,
+																																																																																												jqxhr) {
+
+																																																																																											$
+																																																																																													.getScript(
+																																																																																															"basejs/plugins/select2/dist/js/select2.min.js",
+																																																																																															function(
+																																																																																																	data,
+																																																																																																	status,
+																																																																																																	jqxhr) {
+																																																																																																$
+																																																																																																		.getScript(
+																																																																																																				"basejs/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js",
+																																																																																																				function(
+																																																																																																						data,
+																																																																																																						status,
+																																																																																																						jqxhr) {
+																																																																																																					$
+																																																																																																							.getScript(
+																																																																																																									"basejs/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.zh-CN.js",
+																																																																																																									function(
+																																																																																																											data,
+																																																																																																											status,
+																																																																																																											jqxhr) {
+																																																																																																										$
+																																																																																																												.getScript(
+																																																																																																														"common/layer/layer.js",
+																																																																																																														function(
+																																																																																																																data,
+																																																																																																																status,
+																																																																																																																jqxhr) {
+																																																																																																															$
+																																																																																																																	.getScript(
+																																																																																																																			"common/jquery.cookie.js",
+																																																																																																																			function(
+																																																																																																																					data,
+																																																																																																																					status,
+																																																																																																																					jqxhr) {
+																																																																																																																				$
+																																																																																																																						.getScript(
+																																																																																																																								"common/jquery.form.js",
+																																																																																																																								function(
+																																																																																																																										data,
+																																																																																																																										status,
+																																																																																																																										jqxhr) {
+																																																																																																																									$
+																																																																																																																											.getScript(
+																																																																																																																													"common/formValid.js",
+																																																																																																																													function(
+																																																																																																																															data,
+																																																																																																																															status,
+																																																																																																																															jqxhr) {
+																																																																																																																													});
+																																																																																																																								});
+																																																																																																																			});
+																																																																																																														});
+																																																																																																									});
+																																																																																																				});
+																																																																																															});
+																																																																																										});
+																																																																																					});
+																																																																																});
+																																																																											});
+																																																																						});
+																																																																	});
+																																																												});
+																																																							});
+																																																		});
+																																													});
+																																								});
+																																			});
+																														});
+																									});
+																				});
+															});
+										});
+					});
+</script>
+<!--涓嬫媺閫夋嫨 js-->
+<div class="end" style="display: none;"></div>
